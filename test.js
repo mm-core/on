@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import t, { emit } from './';
+import t, { emit } from './dist/index';
 
 describe('on and emit', () => {
 	it('custom click event', async () => {

@@ -4,8 +4,8 @@
 	"description": "事件绑定",
 	"scripts": {
 		"test": "tsc -w & karma start",
-		"lint": "eslint ./*.ts",
-		"compile-amd": "tsc -m amd -d false --outFile main.js",
+		"lint": "eslint ./src/*.ts",
+		"compile-amd": "tsc -m amd -d false --outFile ./dist/main.js",
 		"compile-cjs": "tsc",
 		"compile": "npm run compile-cjs && npm run compile-amd",
 		"build": "npm run lint && npm run compile"
@@ -14,7 +14,7 @@
 		"type": "git",
 		"url": "https://gitee.com/mmstudio/base"
 	},
-	"main": "index.js",
+	"main": "dist/index.js",
 	"keywords": [
 		"mm",
 		"mmstudio",
