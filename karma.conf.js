@@ -1,14 +1,14 @@
 module.exports = config => {
 	config.set({
+		failOnEmptyTestSuite: false,	// see https://github.com/karma-runner/karma/issues/2528#issuecomment-519589053
 		frameworks: ['mocha', 'chai'],
 		files: [
-			// { pattern: 'test/*_test.js', watched: false },
-			'./test.js'
+			'./tests/*.js'
 		],
 		browsers: ['ChromiumHeadless'],
 		preprocessors: {
 			// 'src/**/*.js': ['coverage'],
-			'test.js': ['webpack']
+			'./tests/*.js': ['webpack']
 		},
 		webpack: {
 			mode: 'development'
