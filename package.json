@@ -1,6 +1,6 @@
 {
 	"name": "@mmstudio/on",
-	"version": "1.0.202003041318",
+	"version": "1.0.202003041352",
 	"description": "事件绑定",
 	"scripts": {
 		"test": "npm run build && karma start --single-run",
