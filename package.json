@@ -1,7 +1,7 @@
 {
-	"name": "@mmstudio/base",
+	"name": "@mmstudio/on",
 	"version": "1.0.0",
-	"description": "$desc",
+	"description": "事件绑定",
 	"scripts": {
 		"test": "tsc -w",
 		"lint": "eslint ./*.ts",
@@ -23,8 +23,8 @@
 		"框架"
 	],
 	"author": {
-		"name": "$user",
-		"email": "$email@xxx.com",
+		"name": "taoqf",
+		"email": "tao_qiufeng@126.com",
 		"url": "http://www.01feidao.com/"
 	},
 	"maintainers": [
