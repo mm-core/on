@@ -11,7 +11,7 @@
 		"compile-cjs": "tsc",
 		"compile": "npm run compile-cjs && npm run compile-amd",
 		"build": "npm run lint && npm run compile",
-		"up": "git merge master"
+		"up": "git pull git@gitee.com:mmstudio/base.git amd"
 	},
 	"repository": {
 		"type": "git",
