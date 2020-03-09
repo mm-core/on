@@ -43,7 +43,7 @@ export function createCompositeHandle(...handles: IHandle[]): IHandle {
  * @param {string} type The event type to emit
  * @returns Boolean indicating if preventDefault was called on the event object (only relevant for DOM events;
  */
-export function emit(target: Window | Document | Node, type: string, bubbles: boolean, cancelable: boolean, params?: { [key: string]: any; }) {
+export function emit(target: Window | Document | Node, type: string, bubbles: boolean, cancelable: boolean, params?: { [key: string]: unknown; }) {
 	const node = target as Node;
 	const win = target as Window;
 	const doc = target as Document;
@@ -59,7 +59,7 @@ export function emit(target: Window | Document | Node, type: string, bubbles: bo
 		if (params) {
 			for (const key in params) {
 				if (!(key in nativeEvent)) {
-					nativeEvent[key] = (params as any)[key];
+					nativeEvent[key] = params[key];
 				}
 			}
 		}
@@ -87,7 +87,7 @@ export default function on(target: Window | Document | Node, type: string | stri
 		return createCompositeHandle(...handles);
 	}
 
-	const callback = function (this: any, ...args: any[]) {
+	const callback = function (this: unknown, ...args: unknown[]) {
 		listener.apply(this, args);
 	} as EventListener;
 
