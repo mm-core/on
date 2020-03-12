@@ -10,7 +10,7 @@
 		"compile-amd": "tsc -m amd -d false --outFile ./dist/main.js",
 		"compile-cjs": "tsc",
 		"compile": "npm run compile-cjs && npm run compile-amd",
-		"build": "npm run lint && npm run compile",
+		"build": "npm run clean && npm run lint && npm run compile",
 		"up": "git pull git@gitee.com:mmstudio/base.git amd"
 	},
 	"repository": {
@@ -18,6 +18,8 @@
 		"url": "https://gitee.com/mmstudio/base"
 	},
 	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"keywords": [
 		"mm",
 		"mmstudio",
