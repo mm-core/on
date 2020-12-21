@@ -4,7 +4,7 @@
 	"description": "事件绑定",
 	"scripts": {
 		"test": "npm run build && karma start --single-run",
-		"watch": "tsc -w & karma start",
+		"dev": "tsc -w & karma start",
 		"clean": "del-cli ./dist/",
 		"lint": "eslint ./src/**/*.ts",
 		"compile-amd": "tsc -m amd -d false --outFile ./dist/main.js",
