@@ -17,19 +17,17 @@
 		"type": "https+git",
 		"url": "https://github.com/mm-core/on.git"
 	},
-	"homepage": "https://mm-works.github.io",
+	"homepage": "https://01factory.github.io",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"keywords": [
 		"mm",
 		"mmstudio",
-		"蛮蛮",
-		"蛮蛮工作室",
-		"插件式",
-		"原子操作",
-		"控件",
-		"框架"
+		"01",
+		"零壹",
+		"微工厂",
+		"原子操作"
 	],
 	"author": {
 		"name": "taoqf",
@@ -42,6 +40,10 @@
 		}
 	],
 	"license": "MIT",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
 	"dependencies": {},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "latest",
@@ -50,6 +52,7 @@
 		"del-cli": "latest",
 		"eslint": "latest",
 		"eslint-config-prettier": "latest",
+		"eslint-config-ts-lambdas": "latest",
 		"eslint-plugin-import": "latest",
 		"karma": "latest",
 		"karma-chai": "latest",
